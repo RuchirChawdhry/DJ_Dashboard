@@ -1,13 +1,10 @@
 {% extends 'base.html' %}
-{% load widget_tweaks %}
-
-
 
 {% block content %}
 <h2>Login</h2>
 <form method="post">
   {% csrf_token %}
-  {{ form.as_p | attr:"class:form" }}
+  {{ form.as_p }}
   <button type="submit">Login</button>
 </form>
 {% endblock content %}
