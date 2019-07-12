@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <title></title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar is-transparent is-fixed-top">
+        <div class="navbar-brand">
+            <a class="navbar-item is-size-4 has-text-weight-light" href="/charts">Charts</a>
+            <!-- <a class="navbar-item" href="https://bulma.io">
+                    <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28"> -->
+            <!-- </a> -->
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="/charts">
+                    Home
+                </a>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link" href="/charts">
+                        Charts
+                    </a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item" href="">
+                            Mean Salary by Cities </a>
+                        <a class="navbar-item" href="">
+                            Mean Salary by Industry </a>
+                        <a class="navbar-item" href="">
+                            Jobs by Cities
+                        </a>
+                        <a class="navbar-item" href="">
+                            Jobs by Experience
+                        </a>
+                        <a class="navbar-item" href="">
+                            Jobs by Roles
+                        </a>
+                        <hr class="navbar-divider">
+                        <!-- <a class="navbar-item" href="">
+                          Download All Pre-Made Charts
+                        </a> -->
+                        <a class="navbar-item is-active" href="">
+                            Download Charts
+                        </a>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link" href="/charts">
+                        Trends
+                    </a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item" href="">
+                            Salary Trends
+                        </a>
+                        <a class="navbar-item" href="">
+                            Industry Trends
+                        </a>
+                        <a class="navbar-item" href="">
+                            City Trends
+                        </a>
+
+                    </div>
+                </div>
+                <a class="navbar-item" href="" class="navbar-link">Custom Charts</a>
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="field is-grouped">
+                        <p class="control">
+                            <a class="button" href="/login">
+                                <span class="icon">
+                                    <i class="fas fa-sign-in-alt"></i>
+                                </span>
+                                <span>
+                                    Login
+                                </span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section">
+        <div class="columns">
+            <div class="column">
+                <aside class="menu is-spaced has-navbar-fixed-top">
+                    <p class="menu-label">
+                        <!-- General -->
+                    </p>
+                    <ul class="menu-list">
+                        <li><a>Dashboard</a></li>
+                    </ul>
+                    <p class="menu-label">
+                        Admin
+                    </p>
+                    <ul class="menu-list">
+                        <li>
+                            <a class="is-active">CSV</a>
+                            <ul>
+                                <li><a>Upload</a></li>
+                                <li><a>Browse</a></li>
+                            </ul>
+                        </li>
+                        <li><a>Add Charts</a></li>
+                        <li><a>Modify Charts</a></li>
+                    </ul>
+                    <p class="menu-label">
+                        Options
+                    </p>
+                    <ul class="menu-list">
+                        <li>
+                            <div class="field">
+                                <div class="control">
+                                    <input class="input is-primary" type="text" placeholder="City">
+                                </div>
+                        </li>
+                        <li>
+                            <div class="field">
+                                <div class="control">
+                                    <label class="label"></label>
+                                    <div class="select is-primary">
+                                        <select>
+                                            <option value="" disabled selected>Chart Type</option>
+                                            <option>Bar</option>
+                                            <option>Line</option>
+                                            <option>Pie</option>
+                                            <option>Scatter</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li><input type="date" class="bulmaCalendar">
+                        </li>
+                        <li><a>Option</a></li>
+                        <li><a>Option</a></li>
+                    </ul>
+                </aside>
+            </div>
+            <div class="column is-two-thirds"></div>
+            <div class="column"></div>
+        </div>
+
+        {% block content %}
+
+
+
+        {% endblock content %}
+
+
+    </section>
+</body>
+
+</html>
