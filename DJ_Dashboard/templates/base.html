@@ -153,15 +153,25 @@
                     </ul>
                 </aside>
             </div>
-            <div class="column is-two-thirds"></div>
+            <div class="column is-two-thirds">
+
+
+                    {% block content %}
+
+
+
+                    {% endblock content %}
+
+
+            </div>
+
+
+
+            
             <div class="column"></div>
         </div>
 
-        {% block content %}
 
-
-
-        {% endblock content %}
 
 
     </section>
