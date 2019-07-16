@@ -1,6 +1,6 @@
 # DJ_Dashboard
 
-#Heroku:
+## Heroku:
 - [Live Demo App @ Heroku](https://serene-brushlands-60474.herokuapp.com/)
 
 ## Trello
