@@ -12,6 +12,7 @@ django-model-utils = "*"
 django-pandas = "*"
 django-plotly-dash = "*"
 django-widget-tweaks = "*"
+django-allauth = "*"
 
 [requires]
 python_version = "3.6"
